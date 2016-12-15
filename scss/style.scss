@@ -807,11 +807,13 @@ footer{
 
 .credits{
   margin-bottom: 68px;
+  .creditsWraper{
+    display: flex;
+    justify-content: center;
+  }
   div{
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
     color: #545454;
     margin-top: 17px;
     span{

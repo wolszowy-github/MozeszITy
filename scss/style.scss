@@ -173,7 +173,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     .aboutPfirst{
-      margin-top: 108px;
+      margin-top: 37px;
       font-weight: 300;
       font-size: 30px;
       color: #545454;
@@ -195,20 +195,26 @@ header{
   }
 }
 
-.iconsDesc{
+.aboutFourth{
   display: flex;
-  margin-top: 62px;
-
-
-  .iconDescCir{
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    background-color: #ffffff;
+  margin-top: 44px;
+  .boxInfo{
+    background-color: #f4f4f4;
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 
-.under{
+.iconDescCir{
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.centralize{
    display: flex;
    justify-content: center;
  }
@@ -226,7 +232,7 @@ header{
   font-size: 14px;
   margin-top: 25px;
   color: #545454;
-  margin-bottom: 121px;
+  margin-bottom: 20px;
   text-align: center;
   span{
     font-style: italic;
@@ -235,9 +241,46 @@ header{
   }
 }
 
+.textBottom{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #545454;
+  div{
+    padding-left: 10px;
+    border-left: 6px solid #9eb8c9;
+  }
+}
+
+.marginSet1{
+  margin-top: 79px;
+}
+
+.marginSet2{
+  margin-bottom: 63px;
+}
+
+.marginSet3{
+  margin-bottom: 63px;
+}
+
+.displayIcon{
+  // display: none;
+}
+
+.displayTxtBottom{
+  display: none;
+}
+
+.displayTxtBottomBgSwap{
+  // background-color: #ffffff;
+}
+
 .projectProcess{
   height: 660px;
   background-color: #ffd064;
+  display: flex;
   position: relative;
   .bgCalendar{
     width: 261px;
@@ -342,6 +385,7 @@ header{
   margin-top: 57px;
   height: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 84px;
   .processArrow{
@@ -545,6 +589,7 @@ header{
 .newsletter{
   background-color: #f4f4f4;
   height: 360px;
+  display: flex;
   .center{
     display: flex;
     justify-content: center;
@@ -585,6 +630,198 @@ header{
       display: flex;
       align-items: center;
       margin-left: 5px;
+    }
+  }
+}
+
+.projectOrganisers{
+  height: 650px;
+  background-color: #ffd064;
+  position: relative;
+  display: flex;
+  .bgTable{
+    width: 620px;
+    height: 636px;
+    background-image: url('../images/table.png');
+    position: absolute;
+    right: 0px;
+    top: 45px;
+  }
+  .organisersContent{
+    display: flex;
+    .textLeft{
+      z-index: 1;
+    }
+    .organisersHead{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      margin-top: 129px;
+    }
+    .organisersInnerTxt{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 22px;
+      color: #555555;
+      margin-top: 40px;
+      span{
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+    .organisersInnerTxt2{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #555555;
+      font-weight: 600;
+      margin-top: 40px;
+    }
+  }
+}
+
+.supportersLogo{
+  height: 370px;
+  background-color: #ffffff;
+  display: flex;
+  .justifier{
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .whoSupports{
+    margin: 0 60px 0 60px;
+  }
+  .logoImgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .whoSupportsTxt{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #545454;
+  }
+}
+
+.projectContact{
+  height: 650px;
+  display: flex;
+  background-color: #f4f4f4;
+  position: relative;
+  .bgClouds{
+    position: absolute;
+    width: 277px;
+    height: 181px;
+    right: 0;
+    top: 55px;
+  }
+  .contactHead{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #545454;
+    margin-top: 106px;
+  }
+  .contactLowerTxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-top: 35px;
+    font-weight: 600;
+  }
+}
+
+.peopleInvolved{
+  display: flex;
+  margin-top: 92px;
+  .person{
+    z-index: 1;
+    .personImg{
+      display: flex;
+      justify-content: center;
+    }
+    .personName{
+      display: flex;
+      justify-content: center;
+      color: #525252;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .personRole{
+      display: flex;
+      justify-content: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #7c6094;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+    .personEmail{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      a{
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #949494;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+footer{
+  display: flex;
+  height: 288px;
+  background-color: #ffffff;
+  .additionalInfo{
+    display: flex;
+    height: 160px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .infoContentColor{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #72538d;
+    font-weight: 600;
+  }
+  .infoContent{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #343434;
+  }
+  .infoContentLink{
+    text-decoration: none;
+    color: #343434;
+  }
+  #rulesBold{
+  font-weight: bold;
+  }
+}
+
+.credits{
+  margin-bottom: 68px;
+  div{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #545454;
+    margin-top: 17px;
+    span{
+      margin:0 3px 0 3px;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .coloredTitle{
+      font-style: normal;
+      color: #8a799b;
     }
   }
 }

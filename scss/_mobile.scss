@@ -1,0 +1,61 @@
+@media (max-width: 1055px) {
+  .center{
+    width: 100%;
+  }
+
+  header{
+    height: 1264px;
+    .headerTxt{
+      justify-content: center;
+      .innerText{
+        font-size: 48px;
+        .firstLine{
+          font-size: 60px;
+        }
+      }
+    }
+    .headerImg .desktopBg{
+      margin-top: 135px;
+      margin-left: 0;
+    }
+    .headerIcon{
+      justify-content: center;
+      margin-top: 114px;
+    }
+    .headerImg{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .hamburgerMenu{
+    display: block;
+  }
+
+
+  .displayTxtBottom{
+    display: block;
+  }
+
+  .displayTxtBottomBgSwap{
+    background-color: #ffffff !important;
+  }
+
+  // .aboutFourth{
+  //   display: block;
+  //   .boxInfo{
+  //     width: 100%;
+  //     // margin: 0 auto;
+  //   }
+  // }
+
+  .aboutProject{
+    // height: 1638px;
+  }
+
+
+}

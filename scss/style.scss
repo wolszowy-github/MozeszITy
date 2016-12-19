@@ -163,7 +163,9 @@ header{
   .headerImg{
     .desktopBg{
       height: 470px;
-      width: 675px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
       // margin-top: -100px;
       bottom:0px;
       margin-left: -120px;
@@ -225,7 +227,7 @@ header{
 
 
 .aboutProject{
-  height: 100vh;
+  height: 660px;
   background-color: #f4f4f4;
   display: flex;
   .aboutPContent{
@@ -344,7 +346,7 @@ header{
 }
 
 .projectProcess{
-  height: 100vh;
+  height: 650px;
   background-color: #ffd064;
   display: flex;
   position: relative;
@@ -359,9 +361,9 @@ header{
 }
 
 .processContent{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .flexMain{
+    display: flex;
+  }
   .projectPHead{
     display: flex;
     justify-content: center;
@@ -376,13 +378,14 @@ header{
     justify-content: center;
     ul{
       list-style-type: none;
+      width: 100%;
+      margin-left: 13px;
     }
 
   .processInfoSheet{
     display: flex;
     position: relative;
-    width: 500px;
-    height: 312px;
+    // height: 312px;
     background-color: #ffffff;
     margin-top: 35px;
     -webkit-box-shadow: -13px 13px 0px 0px rgba(233,186,77,1);
@@ -409,6 +412,7 @@ header{
         font-weight: 400;
         color: #545454;
         margin-top: 16px;
+        margin-bottom: 90px;
       }
     .cir100h{
       position: relative;
@@ -482,8 +486,55 @@ header{
   }
 }
 
+
+
+.processButtons2{
+  display: flex;
+  margin-top: 20px;
+  display: none;
+  .processArrow2{
+    height: 7px;
+    width: 9px;
+    margin-top: 11px;
+  }
+  .processButtSingle2{
+    width: 102px;
+    height: 43px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #856f98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+.flexPositionStart{
+  justify-content: flex-start;
+}
+
+.flexPositionCenter{
+  justify-content: center;
+}
+
+.flexPositionEnd{
+  justify-content: flex-end;
+}
+
+
+
+
+
 .projectSupport{
-  height: 660px;
+  height: 100%;
   background-color: #9bc0d7;
   display: flex;
   position: relative;
@@ -492,7 +543,7 @@ header{
     height: 244px;
     width: 206px;
     position: absolute;
-    top: 375px;
+    bottom: 20px;
     left:0;
   }
 
@@ -800,6 +851,7 @@ header{
     font-size: 24px;
     color: #545454;
     margin-top: 106px;
+    position: relative;
   }
   .contactLowerTxt{
     font-family: 'Open Sans', sans-serif;

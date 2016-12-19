@@ -1,6 +1,6 @@
 @media (max-width: 1055px) {
   .center{
-    width: 100%;
+    width: 720px;
   }
 
   header{
@@ -17,10 +17,13 @@
     .headerImg .desktopBg{
       margin-top: 135px;
       margin-left: 0;
+      position: static;
     }
     .headerIcon{
       justify-content: center;
       margin-top: 114px;
+      display: flex;
+      position: static;
     }
     .headerImg{
       display: flex;
@@ -45,17 +48,100 @@
     background-color: #ffffff !important;
   }
 
-  // .aboutFourth{
-  //   display: block;
-  //   .boxInfo{
-  //     width: 100%;
-  //     // margin: 0 auto;
-  //   }
-  // }
+  .aboutFourth{
+    display: block;
+    .boxInfo{
+      display: none;
+    //   margin-top: 20px;
+    //   &:hover .displayIcon{
+    //     display: flex;
+    //   }
+    //   &:hover .displayTxtBottom{
+    //     display: block;
+    //   }
+    //   width: 100%;
+    //   // margin: 0 auto;
+    }
+    .boxInfoResize{
+      padding: 30px;
+      display: block;
+      background-color: #ffffff;
+      margin-top: 30px;
+      .iconTxtResize{
+        display: flex;
+        justify-content: space-between;
+      }
+      .headerResize{
+        font-family: 'Atma', cursive;
+        font-size: 40px;
+        color: #71528b;
+        font-weight: 600;
+        margin-top: 17px;
+      }
+      .textDescResize{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        margin-top: 25px;
+        color: #545454;
+        margin-bottom: 20px;
+        text-align: left;
+        span{
+          font-style: italic;
+          font-weight: 600;
+          color: #545454;
+        }
+      }
+      .textBottomResize{
+        border-left: 6px solid #9eb8c9;
+        div{
+          font-family: 'Open Sans', sans-serif;
+          font-size: 17px;
+          font-weight: 600;
+          color: #545454;
+          padding-left: 10px;
+        }
+      }
+    }
 
-  .aboutProject{
-    // height: 1638px;
   }
 
+  .aboutProject{
+    height: 2000px;
+    .aboutPContent{
+       .aboutPfirst {
+          font-size: 50px;
+      }
+      .aboutPsecond{
+        font-size: 20px;
+      }
+      .aboutPthird{
+        font-size: 17px;
+      }
+    }
+  }
+.projectProcess{
+  .bgCalendar{
+  width: 128px;
+  }
+}
 
+.supportFirstRow {
+  display: block;
+  .ifCompany{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wraperNgoEnvelope{
+    width: 100%;
+  }
+}
+
+
+
+  .projectOrganisers{
+    .bgTable{
+      width: 382px;
+    }
+  }
 }

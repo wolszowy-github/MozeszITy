@@ -214,6 +214,11 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 
   &:hover{
     background-color: #ffffff;
@@ -239,6 +244,11 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 
   &:hover{
     background-color: #ffffff;
@@ -295,9 +305,9 @@ header{
     background-color: #f4f4f4;
     margin-right: 10px;
     height: 360px;
-    &:hover .displayIcon{
-      display: none;
-    }
+    // &:hover .displayIcon{
+    //   // display: none;
+    // }
     &:hover .displayTxtBottom{
       display: flex;
     }
@@ -364,9 +374,9 @@ header{
 }
 
 
-.displayIcon{
-  // display: none;
-}
+// .displayIcon{
+//   // display: none;
+// }
 
 .displayTxtBottom{
   display: none;
@@ -645,6 +655,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -ms-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
 
     .envelope{
       width: 60px;

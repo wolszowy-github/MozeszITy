@@ -73,6 +73,15 @@ nav {
   display: flex;
 }
 
+.sticky{
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top:0;
+  background-color: #ffffff !important;
+  border-bottom: 2px solid #71528b;
+}
+
 nav > div{
   display: flex;
   justify-content: space-between;
@@ -88,18 +97,40 @@ nav > div{
   z-index: 1;
 }
 
+.logoNavSticky{
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.navBurger{
+  display: none;
+}
+
+.logoNav2{
+  height: 75px;
+  display: flex;
+  -webkit-box-shadow: 13px 13px 0px -2px rgba(130,118,145,1);
+  -moz-box-shadow: 13px 13px 0px -2px rgba(130,118,145,1);
+  box-shadow: 13px 13px 0px -2px rgba(130,118,145,1);
+  border-bottom: 2px solid #71528b;
+  z-index: 1;
+}
+
 .menu{
   margin-top: 30.5px;
   ul{
     li{
       display: inline-block;
       list-style-type: none;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #63705f;
       margin-left: 52px;
+      a{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #63705f;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -298,7 +329,7 @@ header{
   font-family: 'Atma', cursive;
   font-size: 14px;
   color: #71528b;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 17px;
 }
 
@@ -397,7 +428,7 @@ header{
         font-family: 'Atma', cursive;
         font-size: 60px;
         color: #72538d;
-        font-weight: 600;
+        font-weight: 500;
       }
     .topTxt{
         font-family: 'Open Sans', sans-serif;
@@ -481,7 +512,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
   }
 }
@@ -511,7 +542,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     z-index: 1;
   }
@@ -551,7 +582,7 @@ header{
     .supportHeader{
     display: flex;
     justify-content: flex-end;
-    margin-top: 85px;
+    margin-top: 58px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     font-size: 30px;
@@ -596,7 +627,7 @@ header{
         font-family: 'Atma', cursive;
         color: #ffffff;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
         background-color: #9bc0d7;
         text-transform: uppercase;
         top: -41px;
@@ -660,7 +691,7 @@ header{
         font-family: 'Atma', cursive;
         color: #ffffff;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
         background-color: #9bc0d7;
         padding: 10px;
         top: -41px;
@@ -705,7 +736,7 @@ header{
       font-family: 'Atma', cursive;
       color: #ffffff;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       background-color: #9bc0d7;
       text-transform: uppercase;
       top: -20px;

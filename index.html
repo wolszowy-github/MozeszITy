@@ -5,23 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Atma:400,500,600&amp;subset=latin-ext" rel="stylesheet">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/app.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <nav>
+  <nav class="stickyNav">
     <div class="center">
       <div class="logoNav"><img src="images/logo_mozesz_proper.png" alt="logo"></div>
         <div class="menu">
           <ul>
-            <li>o projekcie</li>
-            <li>przebieg projektu</li>
-            <li>wesprzyj</li>
-            <li>organizatorzy</li>
-            <li>kontakt</li>
+            <li><a href="#aboutproject">o projekcie</a></li>
+            <li><a href="#projectprocess">przebieg projektu</a></li>
+            <li><a href="#support">wesprzyj</a></li>
+            <li><a href="#organisers">organizatorzy</a></li>
+            <li><a href="#contact">kontakt</a></li>
         </ul>
       </div>
+    </div>
+  </nav>
+  <nav class="navBurger">
+    <div class="center">
+      <div class="logoNav2"><img src="images/logo_mozesz_proper.png" alt="logo"></div>
       <div class="hamburgerMenu">
         <div class="burgerWrap">
           <div class="burgerLine"></div>
@@ -45,18 +52,21 @@
         <div class="desktopBg"></div>
       </div>
       <div class="headerIcon">
-        <div class="iconArrow">
-            <svg class="arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 31.479 31.479" style="enable-background:new 0 0 31.479 31.479;" xml:space="preserve">
-            <path d="M26.485,21.206c0.429-0.444,0.429-1.143,0-1.587c-0.444-0.429-1.159-0.429-1.587,0l-8.047,8.047
-            V1.111C16.851,0.492,16.359,0,15.74,0c-0.619,0-1.127,0.492-1.127,1.111v26.555l-8.031-8.047c-0.444-0.429-1.143-0.429-1.587,0
-            c-0.429,0.444-0.429,1.143,0,1.587l9.952,9.952c0.429,0.429,1.143,0.429,1.587,0L26.485,21.206z"/>
-            </svg>
-       </div>
+        <a href="#aboutproject">
+          <div class="iconArrow">
+              <svg class="arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 31.479 31.479" style="enable-background:new 0 0 31.479 31.479;" xml:space="preserve">
+              <path d="M26.485,21.206c0.429-0.444,0.429-1.143,0-1.587c-0.444-0.429-1.159-0.429-1.587,0l-8.047,8.047
+              V1.111C16.851,0.492,16.359,0,15.74,0c-0.619,0-1.127,0.492-1.127,1.111v26.555l-8.031-8.047c-0.444-0.429-1.143-0.429-1.587,0
+              c-0.429,0.444-0.429,1.143,0,1.587l9.952,9.952c0.429,0.429,1.143,0.429,1.587,0L26.485,21.206z"/>
+              </svg>
+         </div>
+       </a>
       </div>
     </div>
   </header>
   <section class="aboutProject">
+    <p id="aboutproject"></p>
     <div class="center aboutPContent">
       <div class="aboutPfirst">O projekcie</div>
       <div class="aboutPsecond">Ciężka sytuacja materialna i trudności mieszkaniowe często skutkują rezugnacją z dalszej nauki.</div>
@@ -140,12 +150,12 @@
     </div>
   </section>
   <section class="projectProcess">
+      <p id="projectprocess"></p>
       <div class="bgCalendar"></div>
       <div class="center processContent">
         <div class="projectPHead col-12">
             Przebieg projektu
         </div>
-
       <div class="col-12 processButtons2 flexPositionStart">
         <div class="processButtSingle2">Rekrutacja</div>
         <svg class="processArrow2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 373.008 373.008" style="enable-background:new 0 0 373.008 373.008;" xml:space="preserve">
@@ -415,6 +425,7 @@
       </div>
   </section>
   <section class="projectSupport">
+    <p id="support"></p>
     <div class="bgGift"></div>
     <div class="center contentSupport">
       <div class="supportHeader col-12">Wesprzyj</div>
@@ -462,6 +473,7 @@
             <div>Zapisz się do newslettera i dowiedz się jak tylko uruchomimy kampanię!</div>
           </div>
           <div class="arrowSign">
+            <a href="#newsletter">
             <div class="iconArrow2">
               <svg class="arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 31.479 31.479" style="enable-background:new 0 0 31.479 31.479;" xml:space="preserve">
@@ -470,12 +482,14 @@
               c-0.429,0.444-0.429,1.143,0,1.587l9.952,9.952c0.429,0.429,1.143,0.429,1.587,0L26.485,21.206z"/>
               </svg>
             </div>
+          </a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section class="newsletter">
+    <p id="newsletter"></p>
     <div class="center col-12">
       <div class="newsletterWrap">
         <div class="newsletterTxt">Zapisz się do newslettera!</div>
@@ -487,6 +501,7 @@
     </div>
   </section>
   <section class="projectOrganisers">
+    <p id="organisers"></p>
     <div class="bgTable"></div>
     <div class="organisersContent center">
       <div class="textLeft col-12">
@@ -507,6 +522,7 @@
     </div>
   </section>
   <section class="projectContact">
+    <p id="contact"></p>
     <div class="bgClouds"><img src="images/clouds.png" alt="chmurki"></div>
     <div class="center col-12">
       <div class="contactHead col-12">Kontakt</div>

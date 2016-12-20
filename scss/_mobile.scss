@@ -31,6 +31,14 @@
     }
   }
 
+  .navBurger{
+    display: flex;
+  }
+
+  nav{
+    display: none;
+  }
+
   .menu{
     display: none;
   }
@@ -75,7 +83,7 @@
         font-family: 'Atma', cursive;
         font-size: 40px;
         color: #71528b;
-        font-weight: 600;
+        font-weight: 500;
         margin-top: 17px;
       }
       .textDescResize{

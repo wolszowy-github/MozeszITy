@@ -8,6 +8,18 @@
   }
 }
 
+h1, h2,h3, p{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
 .col-1 {
   width: 8.3333333%;
 }
@@ -57,7 +69,8 @@
 }
 
 .center{
-  width: 960px;
+  max-width: 960px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -138,6 +151,7 @@ nav > div{
 .hamburgerMenu{
   display: none;
   margin-right: 2%;
+  z-index: 1001;
   .burgerWrap{
     margin-top: 27px;
     .burgerLine{
@@ -146,6 +160,38 @@ nav > div{
       height: 5px;
       border-radius: 3px;
       margin-top: 2px;
+    }
+  }
+}
+
+.hamburgerOpened{
+  background-color: hsla(270, 34%, 44%, 0.7);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgerOpenedHide{
+  display: none;
+}
+
+.menuHamList{
+  li{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    img{
+      margin-right: 5px;
     }
   }
 }
@@ -237,6 +283,7 @@ header{
   }
 
 .iconArrow2{
+  margin-top: 20px;
   border: 1px solid #fff;
   border-radius: 100%;
   width: 65px;
@@ -268,14 +315,12 @@ header{
 
 
 .aboutProject{
-  height: 660px;
+  padding: 5% 0;
   background-color: #f4f4f4;
   display: flex;
   .aboutPContent{
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
     .aboutPfirst{
-      margin-top: 8%;
       font-weight: 300;
       font-size: 30px;
       color: #545454;
@@ -304,7 +349,8 @@ header{
   .boxInfo{
     background-color: #f4f4f4;
     margin-right: 10px;
-    height: 360px;
+    height: 350px;
+    overflow: hidden;
     // &:hover .displayIcon{
     //   // display: none;
     // }
@@ -328,6 +374,7 @@ header{
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  margin-top: 10%;
 }
 
 .centralize{
@@ -387,10 +434,10 @@ header{
 }
 
 .projectProcess{
-  height: 650px;
   background-color: #ffd064;
   display: flex;
   position: relative;
+  padding: 5% 0;
   .bgCalendar{
     width: 261px;
     height: 248px;
@@ -408,7 +455,6 @@ header{
   .projectPHead{
     display: flex;
     justify-content: center;
-    margin-top: 8%;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     color: #ffffff;
@@ -498,11 +544,9 @@ header{
 
 .processButtons{
   margin-top: 57px;
-  height: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 84px;
   .processArrow{
     height: 7px;
     width: 9px;
@@ -575,7 +619,6 @@ header{
 
 
 .projectSupport{
-  height: 100%;
   background-color: #9bc0d7;
   display: flex;
   position: relative;
@@ -588,25 +631,23 @@ header{
     left:0;
   }
 
-  .contentSupport{
-    .supportHeader{
+  .supportHeader{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 58px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  }
+  .slogan{
     display: flex;
     justify-content: flex-end;
-    margin-top: 58px;
     font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 300;
-    }
-    .slogan{
-      display: flex;
-      justify-content: flex-end;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: #535353;
-      margin-top: 16px;
-    }
+    font-size: 14px;
+    font-weight: 600;
+    color: #535353;
+    margin-top: 16px;
   }
 }
 
@@ -617,6 +658,7 @@ header{
   .ifCompany{
     width: 47.9%;
     display: flex;
+    justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #252525;
@@ -762,13 +804,13 @@ header{
 }
 .newsletter{
   background-color: #f4f4f4;
-  height: 360px;
+  padding: 12% 0;
+  // height: 360px;
   display: flex;
   .center{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
   }
   .newsletterWrap{
     display: flex;
@@ -779,6 +821,7 @@ header{
       font-weight: 600;
       color: #545454;
       margin-right: 25px;
+      text-align: center;
     }
   }
   .inputButWrap{
@@ -853,11 +896,10 @@ header{
 }
 
 .supportersLogo{
-  height: 370px;
   background-color: #ffffff;
   display: flex;
+  padding: 10% 0;
   .justifier{
-    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,7 +911,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 10%;
   }
   .whoSupportsTxt{
     display: flex;
@@ -881,7 +923,8 @@ header{
 }
 
 .projectContact{
-  height: 650px;
+  padding: 7% 0;
+  // height: 650px;
   display: flex;
   background-color: #f4f4f4;
   position: relative;
@@ -896,7 +939,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     color: #545454;
-    margin-top: 106px;
+    // margin-top: 106px;
     position: relative;
   }
   .contactLowerTxt{
@@ -934,6 +977,7 @@ header{
       font-size: 12px;
       font-weight: 600;
       margin-top: 12px;
+      text-align: center;
     }
     .personEmail{
       display: flex;

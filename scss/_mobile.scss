@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
-  .center{
-    width: 720px;
-  }
+  // .center{
+  //   width: 720px;
+  // }
 
   header{
     height: 1264px;
@@ -15,7 +15,7 @@
       }
     }
     .headerImg .desktopBg{
-      margin-top: 135px;
+      margin-top: 20%;
       margin-left: 0;
       position: static;
     }
@@ -114,7 +114,7 @@
   }
 
   .aboutProject{
-    height: 2000px;
+    // height: 2000px;
     .aboutPContent{
        .aboutPfirst {
           font-size: 50px;
@@ -129,7 +129,6 @@
   }
 
 .projectProcess{
-  height: 960px;
   .bgCalendar{
   width: 128px;
   }
@@ -166,14 +165,12 @@
 
 
 .projectSupport{
-  .contentSupport{
     .supportHeader{
       font-size: 45px;
     }
     .slogan{
       font-size: 18px;
     }
-  }
   .bgGift{
     // top: 866px;
     left: -64px;
@@ -270,6 +267,56 @@ footer{
 
 }
 
+@media (max-width: 543px){
+  .supportFirstRow {
+
+    .ifCompany{
+      font-size: 15px;
+      .supportTxtWrap{
+        margin-top: 20px;
+        .borderCoverTxt{
+          font-size: 15px;
+          top: -65px;
+        }
+      }
+    }
+    .wraperNgoEnvelope{
+
+      .ifNgo{
+        margin-top: 20px;
+        font-size: 15px;
+        .borderCoverTxt2{
+          font-size: 15px;
+          top: -65px;
+        }
+      }
+    }
+  }
+
+  .supportSecondRow{
+  .lowerBoxContainer{
+    font-size: 15px;
+      .borderCoverTxt3{
+      font-size: 15px;
+      top: -25px;
+      width: 80%;
+      text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .supportSecondRow{
+    .lowerBoxContainer{
+      display: block;
+      .arrowSign{
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .projectOrganisers{
     .bgTable{
@@ -286,29 +333,43 @@ footer{
   }
 }
 
+//
+// .section{
+//   height: 2200px;
+//   @include media(tablet){
+//     height:500px;
+//   }
+//   @include media(pc){
+//     height:500px;
+//   }
+// }
+
 
 
 @media (max-width: 570px) {
-  .aboutProject{
-    height: 2200px;
-  }
+  // .aboutProject{
+  //   height: 2200px;
+  // }
 }
 
 @media (max-width: 538px) {
-  .aboutProject{
-    height: 2500px;
-  }
+  // .aboutProject{
+  //   height: 2500px;
+  // }
   .supportSecondRow{
     .lowerBoxContainer{
       margin-bottom: 235px;
     }
   }
+    .supportersLogo .whoSupports {
+      margin: 0;
+  }
 }
 
 @media (max-width: 470px) {
-  .aboutProject{
-    height: 2700px;
-  }
+  // .aboutProject{
+  //   height: 2700px;
+  // }
   .projectOrganisers{
     .bgTable{
       width: 255px;
@@ -332,18 +393,6 @@ footer{
   }
 }
 
-@media (max-width: 430px) {
-  .aboutProject{
-    height: 3000px;
-  }
-  header .headSection .headerTxt .innerText{
-    font-size: 22px;
-    .firstLine{
-      font-size: 30px;
-    }
-  }
-}
-
 @media (max-width: 427px) {
   .firstTxtBlock{
     margin-top: 41px;
@@ -352,15 +401,26 @@ footer{
 
 
 @media (max-width: 390px) {
-  .aboutProject{
-    height: 3200px;
+  .projectOrganisers .organisersContent .organisersInnerTxt{
+    width: 60%;
+  }
+  .projectOrganisers .organisersContent .organisersHead{
+    margin-top: 90px;
+  }
+  .projectOrganisers .bgTable{
+    top:-47px;
   }
 }
 
 @media (max-width: 370px) {
-  .aboutProject{
-    height: 3370px;
+  .newsletter{
+    .newsletterWrap{
+      .newsletterTxt{
+        font-size: 12px;
+      }
+    }
   }
+
   header{
     height: 950px;
   }
@@ -376,7 +436,18 @@ footer{
   }
   .projectContact{
     .contactLowerTxt{
-      margin-top: 106px;
+      margin-top: 15px;
+      position: relative;
+    }
+  }
+  .projectContact{
+    .bgClouds{
+      top:0;
+      display: flex;
+      justify-content: flex-end;
+      img{
+        transform: scale(.6);
+      }
     }
   }
 }
@@ -408,5 +479,151 @@ footer{
         text-align: center;
       }
     }
+  }
+}
+
+@media (max-width: 840px){
+    header .headerTxt .innerText {
+      font-size: 37px;
+  }
+}
+
+@media (max-width: 710px){
+    header .headerTxt .innerText {
+      font-size: 34px;
+  }
+}
+
+@media (max-width: 657px){
+    header .headerTxt .innerText {
+      font-size: 28px;
+  }
+}
+
+@media (max-width: 544px){
+    header .headerTxt{
+      justify-content: flex-end;
+      .innerText {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  header .headSection .headerTxt .innerText{
+    font-size: 18px;
+    .firstLine{
+      font-size: 34px;
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  header .headSection .headerTxt .innerText{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutFourth{
+    .boxInfoResize{
+      .headerResize{
+        font-size: 21px;
+      }
+      .textDescResize{
+        font-size: 15px;
+      }
+      .textBottomResize{
+        div{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .scaleIcon{
+    transform: scale(.6);
+  }
+
+  .aboutProject{
+    .aboutPContent{
+      .aboutPfirst{
+        font-size: 34px;
+      }
+      .aboutPsecond{
+        font-size: 17px;
+      }
+      .aboutPthird{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 330px){
+  .supportFirstRow {
+    .ifCompany{
+      .supportTxtWrap{
+        .borderCoverTxt{
+          font-size: 14px;
+          top: -62px;
+        }
+      }
+    }
+    .wraperNgoEnvelope{
+      .ifNgo{
+        .borderCoverTxt2{
+          font-size: 14px;
+          top: -61px;
+        }
+      }
+    }
+  }
+
+  .supportSecondRow{
+    .lowerBoxContainer{
+      .borderCoverTxt3{
+        font-size: 14px;
+        top: -21px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px){
+  footer{
+    .infoContent{
+      font-size: 11px;
+    }
+    .infoContentColor{
+      font-size: 11px;
+    }
+    .infoUnitLast{
+      margin-top: -155px;
+    }
+  }
+}
+
+@media (max-width: 330px){
+  header {
+    height: 590px;
+    .headerImg .desktopBg {
+      height: 355px;
+    }
+  }
+}
+
+@media (max-width: 350px){
+  header {
+    height: 654px;
+    .headerImg .desktopBg {
+      height: 375px;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  header {
+    height: 720px;
   }
 }

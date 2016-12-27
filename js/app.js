@@ -84,6 +84,25 @@ $(function(){
        hideIcon();
    });
 
-   $('.slider').slick();
+   function showHamburgerMenu(){
+     var hamburgerOpened = $('.hamburgerOpened');
+     var hamburgerButton = $('.hamburgerMenu');
 
+     hamburgerButton.on('click', function(){
+       hamburgerOpened.toggleClass('hamburgerOpenedHide');
+     });
+   }
+
+   showHamburgerMenu();
+
+   function hideHamburgerMenuClick(){
+     var a = $('.menuHamList').find('li').find('a');
+     var hamburgerOpened = $('.hamburgerOpened');
+
+      a.on('click', function(){
+        hamburgerOpened.toggleClass('hamburgerOpenedHide');
+      });
+   }
+
+   hideHamburgerMenuClick();
 });

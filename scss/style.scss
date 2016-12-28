@@ -442,7 +442,7 @@ header{
     width: 261px;
     height: 248px;
     background-image: url('../images/calendar.png');
-    margin-top: 56px;
+    margin-top: 0px;
     position: absolute;
     right: 0px;
   }
@@ -450,7 +450,7 @@ header{
 
 .processContent{
   .flexMain{
-    display: flex;
+    position: relative;
   }
   .projectPHead{
     display: flex;
@@ -460,24 +460,31 @@ header{
     color: #ffffff;
     font-weight: 300;
   }
+
   .wrapInfoSheet{
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     ul{
       list-style-type: none;
       width: 100%;
       margin-left: 13px;
+      height: 419px;
+      display: flex;
+      align-items: center;
     }
 
   .processInfoSheet{
     display: flex;
     position: relative;
-    // height: 312px;
     background-color: #ffffff;
     margin-top: 35px;
     -webkit-box-shadow: -13px 13px 0px 0px rgba(233,186,77,1);
     -moz-box-shadow: -13px 13px 0px 0px rgba(233,186,77,1);
     box-shadow: -13px 13px 0px 0px rgba(233,186,77,1);
+    .processSheetContent{
+      z-index: 1;
+    }
     .number{
         display: flex;
         justify-content: flex-end;
@@ -523,23 +530,22 @@ header{
       }
     }
   }
-.hideProcessInfo{
-  display: none;
-}
-  .arrowRight{
-    margin-top: 214px;
-    display: flex;
-    align-items: baseline;
-    img{
-      margin-left: 70px;
-    }
+  .hideProcessInfo{
+    display: none;
   }
-  .arrowLeft{
-    margin-top: 214px;
-    display: flex;
-    align-items: baseline;
 
+  .processArrows{
+    position: absolute;
+    top:60%;
   }
+
+  #processArrowRight{
+    right: 0;
+  }
+}
+
+#monthFontRes{
+  font-size: 17px;
 }
 
 .processButtons{
@@ -568,6 +574,7 @@ header{
     color: #ffffff;
     font-weight: 500;
     text-align: center;
+    cursor: pointer;
   }
 }
 
@@ -599,6 +606,7 @@ header{
     font-weight: 500;
     text-align: center;
     z-index: 1;
+    cursor: pointer;
   }
 }
 

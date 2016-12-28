@@ -21,24 +21,81 @@ $(function(){
 
     scroll();
 
-    function smartScroll(){
+    function smartScroll1(){
+         var menu = $('.menu');
+         var a = menu.find('a');
 
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
+         a.on('click', function(){
+             var href = $(this).attr('href');
+             var adres = $(href).offset().top - 77;
+             $('html, body').animate({
+                scrollTop: adres
+               }, 1000);
+         })
+     }
+
+    smartScroll1();
+
+    function smartScroll2(){
+      var headerIcon = $('.headerIcon');
+      var linkHeaderIcon = headerIcon.find('a');
+
+
+        linkHeaderIcon.on('click', function(){
+            var href = $(this).attr('href');
+            var adres = $(href).offset().top;
+            var width = $(window).width();
+            if (width > 1023) {
+              $('html, body').animate({
+                 scrollTop: adres - 77
+                }, 1000);
+            }  else {
+              $('html, body').animate({
+                 scrollTop: adres
+                }, 1000);
+            }
+        })
+    }
+
+    smartScroll2();
+
+    function smartScroll3(){
+      var arrowSign = $('.arrowSign');
+      var arrowSignLink = arrowSign.find('a');
+
+        arrowSignLink.on('click', function(){
+            var href = $(this).attr('href');
+            var adres = $(href).offset().top;
+            var width = $(window).width();
+            if (width > 1023) {
+              $('html, body').animate({
+                 scrollTop: adres - 77
+                }, 1000);
+            }  else {
+              $('html, body').animate({
+                 scrollTop: adres
+                }, 1000);
+            }
+        })
+    }
+
+    smartScroll3();
+
+    function smartScroll4(){
+      var menuHamList = $('.menuHamList');
+      var menuHamListLinks = menuHamList.find('a');
+
+        menuHamListLinks.on('click', function(){
+            var href = $(this).attr('href');
+            var adres = $(href).offset().top;
             $('html, body').animate({
-              scrollTop: target.offset().top - 77
-            }, 1000);
-            return false;
-          }
-        }
-      })
+               scrollTop: adres
+              }, 1000);
+        })
+    }
 
-    };
+    smartScroll4();
 
-    smartScroll();
 
     function hideIcon(){
       var aboutFourth = $('.aboutFourth');
@@ -105,4 +162,35 @@ $(function(){
    }
 
    hideHamburgerMenuClick();
+
+   function processButtonsBigRes(){
+     var wrapInfoSheetLi = $('.wrapInfoSheet').find('li');
+     var buttonsBigRes = $('.processButtSingle')
+
+
+     buttonsBigRes.on('click', function(){
+       var indexButtons = $(this).index('.processButtSingle');
+       wrapInfoSheetLi.hide();
+       wrapInfoSheetLi.eq(indexButtons).fadeIn();
+     })
+
+   }
+
+   processButtonsBigRes();
+
+   function processButtonsSmallerRes(){
+     var wrapInfoSheetLi = $('.wrapInfoSheet').find('li');
+     var buttonsSmallerRes = $('.processButtSingle2')
+
+     buttonsSmallerRes.on('click', function(){
+       var indexButtons = $(this).index('.processButtSingle2');
+       console.log(indexButtons);
+       wrapInfoSheetLi.hide();
+       wrapInfoSheetLi.eq(indexButtons).fadeIn();
+     })
+
+   }
+
+   processButtonsSmallerRes();
+
 });

@@ -131,6 +131,7 @@
 .projectProcess{
   .bgCalendar{
   width: 128px;
+  margin-top: 56px;
   }
   .projectPHead{
     font-size: 40px;
@@ -627,3 +628,73 @@ footer{
     height: 720px;
   }
 }
+
+// problemZwysokością
+
+@media (max-width: 900px){
+  .processContent{
+    .wrapInfoSheet{
+      width: 80%;
+    }
+  }
+}
+
+
+@media (max-width: 590px){
+  .processContent{
+    .wrapInfoSheet{
+      .processInfoSheet{
+        .number{
+          font-size: 40px;
+        }
+        .topTxt{
+          margin-top: 60px;
+        }
+        .bottomTxt{
+          font-size: 12px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 799px){
+//   .processContent{
+//     .wrapInfoSheet{
+//       width: 80%;
+//     }
+//   }
+// }
+//
+// @media (max-width: 509px){
+//   .processContent{
+//     .wrapInfoSheet{
+//       width: 90%;
+//     }
+//   }
+// }
+//
+// @media (max-width: 459px){
+//   .projectProcess{
+//     height: 900px;
+//   }
+// }
+//
+// @media (max-width: 367px){
+//   .projectProcess{
+//     height: 950px;
+//   }
+// }
+//
+// @media (max-width: 349px){
+//   .projectProcess{
+//     height: 1000px;
+//   }
+// }
+//
+// @media (max-width: 330px){
+//   .projectProcess{
+//     height: 1050px;
+//   }
+// }

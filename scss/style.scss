@@ -365,6 +365,7 @@ header{
     }
   }
 }
+
   .boxInfoResize{
     display: none;
   }
@@ -537,10 +538,12 @@ header{
   .processArrows{
     position: absolute;
     top:60%;
+    cursor: pointer;
   }
 
   #processArrowRight{
     right: 0;
+    display: none;
   }
 }
 

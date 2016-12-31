@@ -20,6 +20,16 @@ h1, h2,h3, p{
 	vertical-align: baseline;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
 .col-1 {
   width: 8.3333333%;
 }
@@ -73,12 +83,6 @@ h1, h2,h3, p{
   width: 95%;
   margin: 0 auto;
 }
-
-// .center::after{
-//   clear: both;
-//   content: "";
-//   display: block;
-// }
 
 nav {
   background-color: #9fc794;
@@ -543,6 +547,9 @@ header{
 
   #processArrowRight{
     right: 0;
+  }
+
+  #processArrowLeft{
     display: none;
   }
 }
@@ -1056,5 +1063,6 @@ footer{
     }
   }
 }
+
 
 @import 'mobile';

@@ -99,38 +99,17 @@ $(function(){
 
     function hideIcon(){
       var aboutFourth = $('.aboutFourth');
-      var boxLocalize1 = aboutFourth.find('.boxLocalize1');
-      var boxLocalize2 = aboutFourth.find('.boxLocalize2');
-      var boxLocalize3 = aboutFourth.find('.boxLocalize3');
-      var icon1 = aboutFourth.find('.iconFirst');
-      var icon2 = aboutFourth.find('.iconSecond');
-      var icon3 = aboutFourth.find('.iconThird');
-
+      var boxLocalize = aboutFourth.find('.boxInfo');
       var width = $(window).width();
+
         if (width > 1023) {
 
-          boxLocalize1.on('mouseenter', function(){
-            icon1.slideUp(400);
+          boxLocalize.on('mouseenter', function(){
+            $(this).children().first().slideUp(400);
           });
 
-          boxLocalize1.on('mouseleave', function(){
-            icon1.slideDown(400);
-          });
-
-          boxLocalize2.on('mouseenter', function(){
-            icon2.slideUp(400);
-          });
-
-          boxLocalize2.on('mouseleave', function(){
-            icon2.slideDown(400);
-          });
-
-          boxLocalize3.on('mouseenter', function(){
-            icon3.slideUp(400);
-          });
-
-          boxLocalize3.on('mouseleave', function(){
-            icon3.slideDown(400);
+          boxLocalize.on('mouseleave', function(){
+            $(this).children().first().slideDown(400);
           });
         }
     }
@@ -180,11 +159,11 @@ $(function(){
          console.log(index);
 
          if(index === 0){
-           sliderRightArrow.fadeOut();
-           sliderLeftArrow.fadeIn();
-         } else if(index === wrapInfoSheetLi.length - 1){
            sliderLeftArrow.fadeOut();
            sliderRightArrow.fadeIn();
+         } else if(index === wrapInfoSheetLi.length - 1){
+           sliderRightArrow.fadeOut();
+           sliderLeftArrow.fadeIn();
          } else {
            sliderRightArrow.fadeIn();
            sliderLeftArrow.fadeIn();
@@ -206,11 +185,11 @@ $(function(){
          console.log(index);
 
          if(index === 0){
-           sliderRightArrow.fadeOut();
-           sliderLeftArrow.fadeIn();
-         } else if(index === wrapInfoSheetLi.length - 1){
            sliderLeftArrow.fadeOut();
            sliderRightArrow.fadeIn();
+         } else if(index === wrapInfoSheetLi.length - 1){
+           sliderRightArrow.fadeOut();
+           sliderLeftArrow.fadeIn();
          } else {
            sliderRightArrow.fadeIn();
            sliderLeftArrow.fadeIn();
@@ -223,12 +202,8 @@ $(function(){
      processButtonsSmallerRes();
 
      function arrowsClick(){
-       var wrapInfoSheetLi = $('.wrapInfoSheet').find('li');
-       var sliderLeftArrow = $('#processArrowLeft');
-       var sliderRightArrow = $('#processArrowRight');
 
-
-       sliderLeftArrow.on('click', function(){
+       sliderRightArrow.on('click', function(){
            index = index + 1;
            console.log(index);
 
@@ -237,14 +212,14 @@ $(function(){
              index = wrapInfoSheetLi.length - 1;
              $(this).fadeOut();
            } else {
-             sliderRightArrow.fadeIn();
+             sliderLeftArrow.fadeIn();
            }
 
            wrapInfoSheetLi.hide();
            wrapInfoSheetLi.eq(index).fadeIn();
        });
 
-      sliderRightArrow.on('click', function(){
+      sliderLeftArrow.on('click', function(){
             index = index - 1;
             console.log(index);
 
@@ -252,7 +227,7 @@ $(function(){
               index = 0;
               $(this).fadeOut();
             } else {
-              sliderLeftArrow.fadeIn();
+              sliderRightArrow.fadeIn();
             }
 
             wrapInfoSheetLi.hide();

@@ -105,11 +105,11 @@ $(function(){
         if (width > 1023) {
 
           boxLocalize.on('mouseenter', function(){
-            $(this).children().first().slideUp(400);
+            $(this).children().first().stop(true, false).slideUp(400);
           });
 
           boxLocalize.on('mouseleave', function(){
-            $(this).children().first().slideDown(400);
+            $(this).children().first().stop(true, false).slideDown(400);
           });
         }
     }

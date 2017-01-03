@@ -464,6 +464,7 @@ header{
     font-size: 30px;
     color: #ffffff;
     font-weight: 300;
+    position: relative;
   }
 
   .wrapInfoSheet{
@@ -597,7 +598,8 @@ header{
   .processArrow2{
     height: 7px;
     width: 9px;
-    margin-top: 11px;
+    margin-top: 17px;
+    z-index: 1;
   }
   .processButtSingle2{
     width: 102px;
@@ -685,6 +687,7 @@ header{
     z-index: 1;
     .supportTxtWrap{
       position: relative;
+      padding-right: 20px;
       .bottomMarg{
         margin-bottom: 13px;
       }
@@ -740,7 +743,6 @@ header{
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
-    margin-left: 15px;
   }
 
 
@@ -757,6 +759,8 @@ header{
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       color: #252525;
+      width: 88%;
+      padding-right: 20px;
       span{
         font-weight: 600;
         font-style: italic;
@@ -792,12 +796,11 @@ header{
     position: relative;
 
     .wrapBoxText{
-      div{
-        &:last-child{
+      padding-right: 5px;
+      .secTxtBlock{
         margin-top: 26px;
         font-style: italic;
         font-weight: 600;
-      }
       }
     }
 
@@ -814,8 +817,8 @@ header{
       font-weight: 500;
       background-color: #9bc0d7;
       text-transform: uppercase;
-      top: -20px;
-      padding: 10px;
+      top: -13px;
+      padding: 0 10px;
       left: 20px;
     }
   }
@@ -909,6 +912,7 @@ header{
       color: #555555;
       font-weight: 600;
       margin-top: 40px;
+      width: 45%;
     }
   }
 }
@@ -966,6 +970,7 @@ header{
     color: #a0a0a0;
     margin-top: 35px;
     font-weight: 600;
+    width: 56%;
   }
 }
 

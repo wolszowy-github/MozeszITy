@@ -131,11 +131,11 @@
 .projectProcess{
   .bgCalendar{
   width: 128px;
-  margin-top: 56px;
+  margin-top: 0px;
   }
   .projectPHead{
     font-size: 40px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
 }
 
@@ -213,7 +213,6 @@
     width: 75%;
     .borderCoverTxt3{
       font-size: 20px;
-      top: -28px;
     }
   }
 }
@@ -299,8 +298,7 @@ footer{
     font-size: 15px;
       .borderCoverTxt3{
       font-size: 15px;
-      top: -25px;
-      width: 80%;
+      width: 86%;
       text-align: center;
       }
     }
@@ -310,7 +308,7 @@ footer{
 @media (max-width: 450px){
   .supportSecondRow{
     .lowerBoxContainer{
-      display: block;
+      // display: block;
       .arrowSign{
         justify-content: flex-end;
       }
@@ -354,12 +352,9 @@ footer{
 }
 
 @media (max-width: 538px) {
-  // .aboutProject{
-  //   height: 2500px;
-  // }
   .supportSecondRow{
     .lowerBoxContainer{
-      margin-bottom: 235px;
+      // margin-bottom: 235px;
     }
   }
     .supportersLogo .whoSupports {
@@ -394,22 +389,10 @@ footer{
   }
 }
 
-@media (max-width: 427px) {
-  .firstTxtBlock{
-    margin-top: 41px;
-  }
-}
-
 
 @media (max-width: 390px) {
   .projectOrganisers .organisersContent .organisersInnerTxt{
     width: 60%;
-  }
-  .projectOrganisers .organisersContent .organisersHead{
-    margin-top: 90px;
-  }
-  .projectOrganisers .bgTable{
-    top:-47px;
   }
 }
 
@@ -430,7 +413,7 @@ footer{
 @media (max-width: 600px) {
   .whoSupports{
     .logoImgs{
-      img{
+      .imgSmaller{
       width: 30%;
       }
     }
@@ -523,6 +506,13 @@ footer{
   header .headSection .headerTxt .innerText{
     font-size: 16px;
   }
+  .projectContact .contactLowerTxt{
+    font-size: 13px;
+  }
+  .projectContact .bgClouds img {
+    transform: scale(0.4);
+    margin-right: -50px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -559,6 +549,9 @@ footer{
       }
     }
   }
+  .projectSupport .bgGift{
+    transform: scale(.6);
+  }
 }
 
 @media (max-width: 330px){
@@ -585,7 +578,6 @@ footer{
     .lowerBoxContainer{
       .borderCoverTxt3{
         font-size: 14px;
-        top: -21px;
       }
     }
   }
@@ -659,42 +651,125 @@ footer{
   }
 }
 
-// @media (max-width: 799px){
-//   .processContent{
-//     .wrapInfoSheet{
-//       width: 80%;
-//     }
-//   }
-// }
-//
-// @media (max-width: 509px){
-//   .processContent{
-//     .wrapInfoSheet{
-//       width: 90%;
-//     }
-//   }
-// }
-//
-// @media (max-width: 459px){
-//   .projectProcess{
-//     height: 900px;
-//   }
-// }
-//
-// @media (max-width: 367px){
-//   .projectProcess{
-//     height: 950px;
-//   }
-// }
-//
-// @media (max-width: 349px){
-//   .projectProcess{
-//     height: 1000px;
-//   }
-// }
-//
-// @media (max-width: 330px){
-//   .projectProcess{
-//     height: 1050px;
-//   }
-// }
+@media (max-width: 425px){
+  .projectProcess .projectPHead {
+    margin-bottom: 35px;
+  }
+  .supportFirstRow .ifCompany .supportTxtWrap{
+    margin-top: 0px;
+  }
+  .supportFirstRow .ifCompany .supportTxtWrap .borderCoverTxt{
+    top: -44px;
+  }
+  .supportFirstRow .envCircle {
+    width: 40px;
+    height: 40px;
+  }
+  .supportFirstRow .envCircle .envelope{
+    width: 49px;
+    height: 23px;
+  }
+  .iconArrow{
+    width: 40px;
+    height: 40px;
+    .arrow{
+      height: 18px;
+    }
+  }
+  .supportFirstRow .wraperNgoEnvelope .ifNgo{
+    margin-top: 0px;
+    .borderCoverTxt2{
+      top: -42px;
+    }
+  }
+  .iconArrow2{
+    height: 40px;
+    width: 40px;
+    .arrow{
+      height: 18px;
+      width: 58px;
+    }
+  }
+  .supportersLogo .whoSupportsTxt{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px){
+  .whoSupports{
+    .logoImgs{
+      .imgBigger{
+      width: 18%;
+      }
+    }
+  }
+}
+
+@media (max-width: 377px){
+  .supportSecondRow .lowerBoxContainer{
+    font-size: 12px;
+    .borderCoverTxt3{
+      font-size: 12px;
+    }
+  }
+  .supportFirstRow .ifCompany .supportTxtWrap{
+    font-size: 12px;
+    .borderCoverTxt{
+      font-size: 12px;
+      top: -40px;
+    }
+  }
+  .supportFirstRow .wraperNgoEnvelope .ifNgo{
+    font-size: 12px;
+    .borderCoverTxt2{
+      font-size: 12px;
+    }
+  }
+    .projectProcess .projectPHead {
+      font-size: 30px;
+  }
+  .aboutProject .aboutPContent{
+    .aboutPfirst{
+      font-size: 30px;
+    }
+    .aboutPsecond{
+      font-size: 15px;
+    }
+    .aboutPthird{
+      font-size: 13px;
+    }
+    .aboutFourth .boxInfoResize{
+      .headerResize{
+        font-size: 18px;
+      }
+      .textDescResize{
+        font-size: 14px;
+      }
+      .textBottomResize div{
+        font-size: 12px;
+      }
+    }
+  }
+    .projectSupport{
+      .supportHeader {
+        font-size: 30px;
+      }
+    .slogan{
+      font-size: 14px;
+    }
+  }
+  .projectOrganisers .organisersContent{
+    .organisersInnerTxt{
+      font-size: 13px;
+    }
+    .organisersInnerTxt2{
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 561px){
+  .projectProcess .bgCalendar {
+    width: 80px;
+  }
+}

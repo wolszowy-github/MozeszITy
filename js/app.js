@@ -96,6 +96,21 @@ $(function(){
 
     smartScroll4();
 
+    function smartScroll5(){
+      var logoNav = $('.logoNav');
+      var logoNavLink = logoNav.find('a');
+
+        logoNavLink.on('click', function(){
+            var href = $(this).attr('href');
+            var adres = $(href).offset().top;
+            $('html, body').animate({
+               scrollTop: adres
+              }, 1000);
+        })
+    }
+
+    smartScroll5();
+
 
     function hideIcon(){
       var aboutFourth = $('.aboutFourth');

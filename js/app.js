@@ -111,6 +111,21 @@ $(function(){
 
     smartScroll5();
 
+    function smartScroll6(){
+      var footerButton = $('.footerButton');
+      var footerButtonLink = footerButton.find('a');
+
+        footerButtonLink.on('click', function(){
+            var href = $(this).attr('href');
+            var adres = $(href).offset().top;
+            $('html, body').animate({
+               scrollTop: adres
+              }, 1000);
+        })
+    }
+
+    smartScroll6();
+
 
     function hideIcon(){
       var aboutFourth = $('.aboutFourth');

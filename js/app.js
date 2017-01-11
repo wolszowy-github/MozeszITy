@@ -184,6 +184,8 @@ $(function(){
        var buttonsBigRes = $('.processButtSingle')
 
        buttonsBigRes.on('click', function(){
+         buttonsBigRes.removeClass('buttSelect');
+         $(this).addClass('buttSelect');
          var indexButtons = $(this).index('.processButtSingle');
          index = indexButtons;
          console.log(index);
@@ -210,6 +212,10 @@ $(function(){
        var buttonsSmallerRes = $('.processButtSingle2');
 
        buttonsSmallerRes.on('click', function(){
+
+         buttonsSmallerRes.removeClass('buttSelect');
+         $(this).addClass('buttSelect');
+
          var indexButtons = $(this).index('.processButtSingle2');
          index = indexButtons;
          console.log(index);
@@ -267,6 +273,26 @@ $(function(){
 
      arrowsClick();
 
+     function buttonsSelect(){
+       var buttonsBigRes = $('.processButtSingle');
+       var buttonsSmallerRes = $('.processButtSingle2');
+
+       sliderRightArrow.on('click', function(){
+         buttonsBigRes.removeClass('buttSelect');
+         buttonsBigRes.eq(index).addClass('buttSelect');
+         buttonsSmallerRes.removeClass('buttSelect');
+         buttonsSmallerRes.eq(index).addClass('buttSelect');
+       });
+
+       sliderLeftArrow.on('click', function(){
+         buttonsBigRes.removeClass('buttSelect');
+         buttonsBigRes.eq(index).addClass('buttSelect');
+         buttonsSmallerRes.removeClass('buttSelect');
+         buttonsSmallerRes.eq(index).addClass('buttSelect');
+       });
+
+     }
+     buttonsSelect();
    }
 
    slider();

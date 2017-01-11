@@ -54,7 +54,7 @@ $(function(){
               $('html, body').animate({
                  scrollTop: adres
                 }, 1000);
-              return false;  
+              return false;
             }
         })
     }
@@ -73,10 +73,12 @@ $(function(){
               $('html, body').animate({
                  scrollTop: adres - 77
                 }, 1000);
+              return false;
             }  else {
               $('html, body').animate({
                  scrollTop: adres
                 }, 1000);
+              return false;    
             }
         })
     }

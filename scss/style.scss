@@ -140,7 +140,7 @@ nav > div{
     li{
       display: inline-block;
       list-style-type: none;
-      margin-left: 52px;
+      margin-left: 45px;
       a{
         font-family: 'Open Sans', sans-serif;
         font-size: 12px;
@@ -885,7 +885,14 @@ header{
   background-color: #f4f4f4;
   padding: 12% 0;
   // height: 360px;
-  display: flex;
+  .newsletterHead{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #545454;
+    margin-bottom: 5%;
+    text-align: center;
+  }
   .center{
     display: flex;
     justify-content: center;
@@ -974,6 +981,61 @@ header{
     }
   }
 }
+
+.ambassadors{
+  background-color: #f4f4f4;
+  padding: 8% 0;
+  .ambHead{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #545454;
+    margin-bottom: 2%;
+  }
+  .ambLowerTxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+    // margin-top: 35px;
+    font-weight: 600;
+    margin-bottom: 6%;
+  }
+  .peopleContent{
+    display: flex;
+  }
+  .personAmb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .personName{
+      color: #525252;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .personRole{
+      font-family: 'Open Sans', sans-serif;
+      color: #7c6094;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .personEmail{
+      margin-top: 30px;
+      a{
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #949494;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+
 
 .supportersLogo{
   background-color: #ffffff;

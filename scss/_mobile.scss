@@ -466,6 +466,15 @@ footer{
 
 
 @media (max-width: 760px) {
+  .ambassadors{
+    .peopleContent{
+      display: block;
+      .personAmb{
+        margin: 0 auto;
+        margin-bottom: 8%;
+      }
+    }
+  }
   .projectContact{
     height: 100%;
   }
@@ -527,6 +536,9 @@ footer{
   .projectContact .bgClouds img {
     transform: scale(0.4);
     margin-right: -50px;
+  }
+  .ambassadors .ambLowerTxt{
+    font-size: 13px;
   }
 }
 

@@ -78,7 +78,7 @@ $(function(){
               $('html, body').animate({
                  scrollTop: adres
                 }, 1000);
-              return false;    
+              return false;
             }
         })
     }

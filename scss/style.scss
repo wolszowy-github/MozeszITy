@@ -933,6 +933,12 @@ header{
       display: flex;
       align-items: center;
       margin-left: 5px;
+      cursor: pointer;
+      div{
+        margin: 0 10px;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+      }
     }
   }
 }

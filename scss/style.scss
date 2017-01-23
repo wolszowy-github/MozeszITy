@@ -930,15 +930,17 @@ header{
     button{
       background-color: transparent;
       border: 0px;
-      display: flex;
-      align-items: center;
       margin-left: 5px;
       cursor: pointer;
-      div{
-        margin: 0 10px;
-        font-weight: bold;
-        font-family: 'Open Sans', sans-serif;
-        color: #545454;
+      .firefoxSolved{
+        display: flex;
+        align-items: center;
+        div{
+          margin: 0 10px;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+          color: #545454;
+        }
       }
     }
   }
